@@ -1,0 +1,1485 @@
+/*GENERAL*/
+
+.LoadingDiv {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    text-align: center;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    z-index: 9999999;
+    padding-top: 12%;
+}
+
+.error {
+    color: rgb(253 90 90);
+}
+
+body {
+    font-family: 'Montserrat';
+    font-stretch: 100%;
+}
+
+.sp {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*NAVBAR*/
+
+.navbar {
+    background-color: #e0e1e6;
+}
+
+.navbar-brand {
+    margin-left: 70px;
+}
+
+.nav-link {
+    margin-right: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: rgb(8 81 107);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(8 81 107 / 81%);
+    font-size: 18px;
+}
+
+.logoHeader {
+    width: 230px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-brand {
+        margin-left: 0px;
+    }
+}
+
+
+/*CARRUSEL*/
+
+@media screen and (max-width: 480px) {
+    #carrusel1 {
+        content: url("../images/head1_CHICO1.jpg");
+    }
+    #carrusel2 {
+        content: url("../images/head2_CHICO2.jpg");
+    }
+    #carrusel3 {
+        content: url("../images/head3_CHICO3.jpg");
+    }
+}
+
+
+/*QUIENES SOMOS*/
+
+.quienesSomos {
+    background-color: #10506b;
+    color: white;
+    padding: 50px 100px 50px 100px;
+    text-align: center;
+}
+
+.quienesSomos h2 {
+    padding-bottom: 10px;
+    border-bottom: 4px solid #286e8b;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.quienesSomos p {
+    padding-top: 30px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.quienesSomos span {
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+    .quienesSomos {
+        padding: 10px 15px 10px 15px;
+    }
+    .quienesSomos h2 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .quienesSomos p {
+        padding-top: 20px;
+        font-size: 12px;
+    }
+    .quienesSomos span {
+        font-size: 14px;
+    }
+}
+
+
+/*AULAS MISION*/
+
+.containerAulas {
+    overflow: hidden;
+}
+
+.containerAulas h2 {
+    padding-bottom: 25px;
+    font-weight: 800;
+}
+
+.containerAulas p {
+    text-align: justify;
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+#aulasMision {
+    background-color: #2f3841;
+    color: white;
+    padding: 60px 100px 0px 20px;
+    text-align: left;
+    height: 400px;
+}
+
+.visionImageSuperior,
+.visionImageInferior {
+    background-image: url('../images/vision.jpg');
+    background-size: cover;
+}
+
+.misionImage {
+    background-image: url('../images/mision.jpg');
+    background-size: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .containerAulas h2 {
+        font-size: 20px;
+    }
+    .containerAulas p {
+        font-size: 14px;
+    }
+    #aulasMision {
+        padding: 10px;
+        text-align: center;
+        height: auto;
+    }
+    .misionImage {
+        height: 300px !important;
+    }
+}
+
+
+/*AULAS VISION*/
+
+#aulasVision {
+    background-color: #47677e;
+    color: white;
+    padding: 60px 20px 0px 100px;
+    text-align: right;
+    height: 400px;
+}
+
+.visionImageSuperior {
+    display: none;
+}
+
+.visionImageInferior {
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    #aulasVision {
+        padding: 10px;
+        text-align: center;
+        height: auto;
+    }
+    .visionImageSuperior {
+        display: block;
+        height: 250px !important;
+    }
+    .visionImageInferior {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .visionImageSuperior {
+        display: block;
+        height: 400px;
+    }
+    .visionImageInferior {
+        display: none;
+        height: 400px;
+    }
+    .misionImage {
+        height: 500px;
+    }
+}
+
+
+/*CURSOS*/
+
+.cursos {
+    background-color: #e0e1e6;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.cursosHeader {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #424242;
+    font-weight: 600;
+}
+
+.cursosHeader span {
+    background-color: rgb(16 154 204);
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 20px;
+    border-bottom-right-radius: 16px;
+    color: white;
+    font-weight: 700;
+}
+
+.cursosIconos div {
+    text-align: center;
+}
+
+.cursosIconos img {
+    width: 50%;
+}
+
+.cursosIconos h4 {
+    font-size: 24px;
+    padding-top: 5px;
+    color: #424242;
+    font-weight: 500;
+}
+
+.cursosIconos a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .cursos {
+        padding-top: 20px;
+    }
+    .cursosHeader {
+        font-size: 14px;
+    }
+    .cursosHeader span {
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    .cursosIconos h4 {
+        font-size: 14px;
+    }
+}
+
+
+/*CONTACTO*/
+
+#contactoContainer {
+    background-color: #303942;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#contactoHeader {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #424242;
+}
+
+#contactoHeader span {
+    background-color: rgb(16 154 204);
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 20px;
+    border-bottom-right-radius: 16px;
+    color: white;
+    font-weight: 700;
+}
+
+#contacto h2 {
+    padding-bottom: 20px;
+    font-weight: 800;
+}
+
+#contacto p {
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/*FORMULARIO*/
+
+#formulario {
+    padding-left: 50px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="email"],
+select {
+    height: 2.75em;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.025);
+    border-radius: 5px;
+    border: solid 2px rgba(255, 255, 255, 0.125);
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+ul.actions {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    cursor: default;
+    list-style: none;
+    margin-left: -1.5em;
+    padding-left: 0;
+}
+
+ul.actions li {
+    vertical-align: middle;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+#btnWhatsapp,
+.button {
+    appearance: none;
+    transition: background-color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
+    color: #ffffff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    height: 3.75em;
+    letter-spacing: 0.1em;
+    line-height: 3.75em;
+    padding: 0 2.25em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+/*CONTACTO*/
+
+.contact {
+    margin-left: 20%;
+}
+
+ul.contact {
+    list-style: none;
+}
+
+ul.contact li {
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+
+/* Icon */
+
+.icon:before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+.icon:before {
+    line-height: inherit;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+.icon.solid:before {
+    font-weight: 900;
+}
+
+.icon.brands:before {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.contact a {
+    color: white;
+}
+
+.contact a:hover {
+    text-decoration: none;
+}
+
+#btnWhatsapp {
+    width: 100%;
+    background-color: #25d366;
+}
+
+.whatsapp {
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+#btnWhatsapp:hover {
+    background-color: #058333;
+}
+
+#btnWhatsapp::after {
+    content: 'ENVIANOS UN WHATSAPP'
+}
+
+@media screen and (max-width: 480px) {
+    #formulario {
+        width: 95%;
+        padding-left: 15px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        width: 100%;
+    }
+    #btnWhatsapp::after {
+        content: 'WhatsApp'
+    }
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button,
+    #btnWhatsapp,
+    .button {
+        padding: 0 1em;
+    }
+    .contact {
+        margin-top: 25px;
+        margin-left: 0px !important;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #formulario {
+        width: 95%;
+    }
+    .contact {
+        margin-top: 25px;
+        margin-left: 30%;
+    }
+}
+
+
+/*FOOTER*/
+
+.footerIndex {
+    background-color: #e0e1e6;
+    color: #303942;
+    height: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.iconosFooter {
+    padding-left: 10%;
+}
+
+.instagram {
+    font-size: 35px;
+    color: white;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, .25);
+    border-radius: 5px;
+    padding: 5px 8px;
+    position: relative;
+    bottom: 5px;
+}
+
+.facebook {
+    font-size: 50px;
+    margin-left: 5%;
+    color: #3a5795;
+}
+
+.volverArriba {
+    padding-right: 5px;
+}
+
+.volverFooter {
+    text-align: right;
+    margin-right: 8%;
+}
+
+.volverFooter a {
+    color: #303942;
+}
+
+.volverFooter a:hover {
+    text-decoration: none;
+    color: #303942;
+}
+
+@media screen and (max-width: 480px) {
+    .footerIndex {
+        height: 75px;
+        font-size: 10px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .iconosFooter {
+        padding-left: 0%;
+    }
+    .facebook {
+        margin-left: 0%;
+        font-size: 38px;
+    }
+    .instagram {
+        font-size: 23px;
+    }
+    .volverArriba {
+        padding-right: 0px;
+    }
+    .volverFooter {
+        margin-right: 0%;
+    }
+}
+
+
+/*PAGINA CURSOS*/
+
+
+/*CONCIENCIAS ALTERNATIVAS*/
+
+
+/*LINEA ABAJO DEL NAV*/
+
+.linea {
+    height: 35px;
+    background-color: #e0e1e6;
+}
+
+#borderBottom {
+    height: 10px;
+    border-bottom: 3px solid #303942;
+}
+
+
+/*TITULO CONCIENCIAS ALTERNATIVAS*/
+
+.concienciasAlternativasSpan {
+    background-color: #ba4072;
+    padding-bottom: 15px;
+    padding-left: 100px;
+    padding-right: 20px;
+    border-bottom-right-radius: 16px;
+    color: white;
+    font-weight: 700;
+    padding-top: 10px;
+    line-height: 48px;
+    font-size: 22px;
+}
+
+.concienciasAlternativasSpanDerecho{
+    background-color: #ba4072;
+    padding-bottom: 15px;
+    padding-right: 100px;
+    padding-left: 20px;
+    border-bottom-left-radius: 16px;
+    font-weight: 700;
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+/*CONTENEDOR CURSOS*/
+
+#concienciasContainer {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.concienciasContainerUltimo {
+    color: white;
+}
+
+.descripcionyLogoContainer {
+    background-color: #c47a8b;
+    height: 400px;
+}
+
+/*LOGO*/
+
+.logoConciencias {
+    width: 15%;
+    margin-left: 80%;
+    position: relative;
+    margin-top: 3px;
+}
+
+#logoCursoPar{
+    margin-left: 4%;
+}
+
+#descripcionCurso h2 {
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#descripcionCursoPar h2 {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+    text-align: right;
+}
+
+#descripcionCurso p {
+    padding-bottom: 2%;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+#descripcionCursoPar p {
+    padding-bottom: 2%;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+
+#botonInformacion {
+    background-color: #2d647c;
+    color: white;
+    margin-left: 50%;
+    margin-bottom: 2%;
+    position: relative;
+    left: -60px;
+}
+
+/*IMAGEN TAICHI*/
+#imageTaichi {
+    background-image: url("../images/tai-chi.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN ASTROLOGIA*/
+.imageAstrologiaSuperior,
+#imageAstrologia {
+    background-image: url("../images/astrologia.jpg");
+    background-size: cover;
+    height: 400px;
+}
+.imageAstrologiaSuperior {
+    display: none;
+}
+
+/*IMAGEN ENEAGRAMA*/
+#imageEneagrama {
+    background-image: url("../images/eneagrama.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN FLORES DE BACH*/
+.imageFloresBachSuperior,
+#imageFloresBach {
+    background-image: url("../images/flores-de-bach.jpg");
+    background-size: cover;
+    height: 400px;
+}
+.imageFloresBachSuperior {
+    display: none;
+}
+
+/*IMAGEN MEDITACION*/
+#imageMeditacion {
+    background-image: url("../images/meditacion.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN TENSEGRIDAD*/
+.imageTensegridadSuperior,
+#imageTensegridad {
+    background-image: url("../images/tanseguridad.jpg");
+    background-size: cover;
+    height: 400px;
+}
+.imageTensegridadSuperior {
+    display: none;
+}
+
+/*IMAGEN CONSTELACIONES*/
+#imageConstelaciones {
+    background-image: url("../images/constelaciones-familiares.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN TRAUMAS DIBUJO*/
+.imageDibujoSuperior,
+#imageDibujo {
+    background-image: url("../images/terapia-dibujo.jpg");
+    background-size: cover;
+    height: 400px;
+}
+.imageDibujoSuperior {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .concienciasAlternativasSpan {
+        padding-left: 20px;
+    }
+    #concienciasContainer {
+        margin-bottom: 0px;
+    }
+    .descripcionyLogoContainer {
+        height: 100%;
+    }
+    #descripcionCurso p,
+    #descripcionCursoPar p { 
+        text-align: justify;
+    }   
+    #descripcionCurso h2, 
+    #descripcionCursoPar h2{
+        text-align: center;
+        padding-left: 50px;
+    }
+    #logoCursoPar{
+        margin-left: 80%;
+    }
+    .imageAstrologiaSuperior,
+    .imageFloresBachSuperior,
+    .imageTensegridadSuperior,
+    .imageDibujoSuperior{
+        display: block;
+        background-position: center;
+        height: 400px !important;
+    }
+    .imagencurso2 {
+        display: none;
+    }
+    #imageTaichi,
+    #imageMeditacion,
+    #imageConstelaciones {
+        background-position: center;
+    }
+    .imageTensegridadSuperior{
+        background-position-x: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) and (min-width: 200px) {
+    .logoHeader {
+        width: 200px;
+    }
+    .concienciasAlternativasSpan {
+        padding-left: 10px;
+    }
+    #descripcionCurso h2,
+    #descripcionCursoPar h2{
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    
+}
+
+/*PAGINA AUTOSUSTENTABILIDAD*/
+
+#autosustentabilidadSpan {
+    background-color: rgb(25, 140, 10);
+}
+
+#descripcionyLogoContainerAutosustentabilidad {
+    background-color: rgb(113, 178, 107);
+    height: 400px;
+}
+
+/*IMAGEN BIOPISCINAS*/
+#imageBiopiscinas {
+    background-image: url("../images/biopiscinas.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN RESIDUOS ORGANICOS*/
+.imageResiduosOrganicosSuperior,
+#imageResiduosOrganicos {
+    background-image: url("../images/residuos-organicos.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageResiduosOrganicosSuperior {
+    display: none;
+}
+
+/*IMAGEN COMPOSTAJE*/
+#imageCompostaje {
+    background-image: url("../images/compostaje.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN CALEFONES*/
+.imageCalefonesSuperior,
+#imageCalefones {
+    background-image: url("../images/calefones-solares.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageCalefonesSuperior {
+    display: none;
+}
+
+/*IMAGEN BIODIGESTORES*/
+#imageBiodigestores{
+    background-image: url("../images/biodigestores.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN VIVEROS SUSTENTABLES*/
+.imageViverosSustentablesSuperior,
+#imageViverosSustentables {
+    background-image: url("../images/viveros-de-nativas.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageViverosSustentablesSuperior {
+    display: none;
+}
+
+/*IMAGEN PERMACULTURA*/
+#imagePermacultura{
+    background-image: url("../images/permacultura.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN APICULTURA*/
+.imageApiculturaSuperior,
+#imageApicultura {
+    background-image: url("../images/apicultura.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageApiculturaSuperior {
+    display: none;
+}
+
+/*IMAGEN PAISAJISMO*/
+#imagePaisajismo{
+    background-image: url("../images/PAISAJISMO.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN HUERTAS*/
+.imageHuertasSuperior,
+#imageHuertas {
+    background-image: url("../images/huertas-organicas.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageHuertasSuperior {
+    display: none;
+}
+
+/*IMAGEN AGUAS DOMICILIARIAS*/
+#imageAguasDomiciliarias{
+    background-image: url("../images/aguas-domiciliarias.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+@media screen and (max-width: 480px) {
+    #concienciasContainer {
+        margin-bottom: 0px;
+    }
+    #descripcionyLogoContainerAutosustentabilidad {
+        height: 100%;
+    }
+    .imageResiduosOrganicosSuperior,
+    .imageCalefonesSuperior,
+    .imageViverosSustentablesSuperior,
+    .imageApiculturaSuperior,
+    .imageHuertasSuperior{
+        display: block;
+        background-position: center;
+        height: 400px !important;
+    }
+    .imagencurso2 {
+        display: none;
+    }
+    #imageBiopiscinas,
+    #imageCompostaje,
+    #imagePermacultura {
+        background-position: center;
+    }
+}
+
+/*PAGINA SABERES AMBIENTALES*/
+
+#saberesAmbientalesSpan {
+    background-color: rgb(255, 170, 0);
+}
+
+#descripcionyLogoContainerSaberesAmbientales {
+    background-color: rgb(242, 195, 102);
+    height: 400px;
+}
+
+#logoSaberesAmbientales {
+    width: 14%;
+}
+
+#logoSaberesAmbientalesPar{
+    margin-left: 4%;
+    width: 14%;
+}
+
+/*IMAGEN NO DEJE RASTRO*/
+.imageNoDejeRastroSuperior,
+#imageNoDejeRastro {
+    background-image: url("../images/no-deje-rastro.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageNoDejeRastroSuperior {
+    display: none;
+}
+
+/*IMAGEN BIOACUSTICA*/
+.imageBioacusticaSuperior,
+#imageBioacustica {
+    background-image: url("../images/bioacustica.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageBioacusticaSuperior {
+    display: none;
+}
+
+/*IMAGEN ANIMALES VENENOSOS*/
+#imageAnimalesVenenosos {
+    background-image: url("../images/animales-venenosos3.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN PLANTAS MEDICINALES*/
+.imagePlantasMedicinalesSuperior,
+#imagePlantasMedicinales {
+    background-image: url("../images/plantas-medicinales.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imagePlantasMedicinalesSuperior {
+    display: none;
+}
+
+/*IMAGEN NATURALISTA*/
+#imageNaturalista {
+    background-image: url("../images/fotografia-naturalista.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN OBSERVACION DE AVES*/
+.imageObservacionAvesSuperior,
+#imageObservacionAves {
+    background-image: url("../images/obsevacion-de-aves.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageObservacionAvesSuperior{
+    display: none;
+}
+
+/*IMAGEN SUSTENTABILIDAD*/
+#imageSustentabilidad {
+    background-image: url("../images/sustentabilidad.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN AGROECOLOGIA*/
+.imageAgroecologiaSuperior,
+#imageAgroecologia {
+    background-image: url("../images/agroecologia.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageAgroecologiaSuperior{
+    display: none;
+}
+
+/*IMAGEN METEOROLOGIA*/
+#imageMeteorologia {
+    background-image: url("../images/introduccion-a-la-meteorologia.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN GEOMORFOLOGIA*/
+.imageGeomorfologiaSuperior,
+#imageGeomorfologia {
+    background-image: url("../images/introduccion-a-la-geomorfologia.jpg");
+    background-size: cover;
+    height: 400px;
+}
+.imageGeomorfologiaSuperior{
+    display: none;
+}
+
+/*IMAGEN AMBIENTES AGRESTES*/
+#imageAmbientesAgrestes {
+    background-image: url("../images/liderazgo-en-ambientes-agrestes.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN SOCORRISMO AMBIENTES AGRESTES*/
+.imageSocorrismoSuperior,
+#imageSocorrismo {
+    background-image: url("../images/socorrismo-en-ambientes-agrestes.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageSocorrismoSuperior{
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    #concienciasContainer {
+        margin-bottom: 0px;
+    }
+    #descripcionyLogoContainerSaberesAmbientales {
+        height: 100%;
+    }
+    .imageBioacusticaSuperior, 
+    .imagePlantasMedicinalesSuperior,
+    .imageObservacionAvesSuperior,
+    .imageAgroecologiaSuperior,
+    .imageGeomorfologiaSuperior,
+    .imageSocorrismoSuperior {
+        display: block;
+        height: 400px !important;
+    }
+    .imageObservacionAvesSuperior{
+        background-position-y: 48px;
+    }
+    .imageAgroecologiaSuperior{
+        background-position-x: -79px;
+    }
+    .imageSocorrismoSuperior{
+        background-position-x: -100px;
+    }
+    .imagencurso2 {
+        display: none;
+    }
+    #logoSaberesAmbientalesPar{
+        margin-left: 80%;
+    }
+}
+
+/*PAGINA DESARROLLO PERSONAL*/
+
+#desarrolloPersonalSpan {
+    background-color: rgb(240, 107, 12);
+}
+
+#descripcionyLogoContainerDesarrolloPersonal {
+    background-color: rgb(234, 160, 108);
+    height: 400px;
+}
+
+/*IMAGEN COACHING*/
+#imageCoaching {
+    background-image: url("../images/coaching-para-emprendedores.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN HABITOS DORMIR*/
+.imageHabitosDormirSuperior,
+#imageHabitosDormir {
+    background-image: url("../images/dinamicadelsuenio.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageHabitosDormirSuperior{
+    display: none;
+}
+
+/*IMAGEN AUTOCONOCIMIENTO*/
+#imageAutoconocimiento {
+    background-image: url("../images/autoconocimiento.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN PENSAMIENTO ESTRATEGICO*/
+.imagePensamientoEstrategicoSuperior,
+#imagePensamientoEstrategico {
+    background-image: url("../images/pensamiento-estrategico.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imagePensamientoEstrategicoSuperior{
+    display: none;
+}
+
+/*IMAGEN ORATORIA*/
+#imageOratoria {
+    background-image: url("../images/oratoria.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN ALIMENTACION SALUDABLE*/
+.imageAlimentacionSuperior,
+#imageAlimentacion {
+    background-image: url("../images/alimentacion-saludable.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageAlimentacionSuperior{
+    display: none;
+}
+
+/*IMAGEN METACOGNICION*/
+#imageMetacognicion {
+    background-image: url("../images/metacognicion.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN SEMIOTICA*/
+.imageSemioticaSuperior,
+#imageSemiotica {
+    background-image: url("../images/semiotica.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageSemioticaSuperior{
+    display: none;
+}
+
+/*IMAGEN ESCRITURA*/
+#imageEscritura {
+    background-image: url("../images/escritura-creativa.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+@media screen and (max-width: 480px) {
+    #concienciasContainer {
+        margin-bottom: 0px;
+    }
+    #descripcionyLogoContainerDesarrolloPersonal {
+        height: 100%;
+    }
+    .imageHabitosDormirSuperior, 
+    .imagePensamientoEstrategicoSuperior,
+    .imageAlimentacionSuperior,
+    .imageSemioticaSuperior {
+        display: block;
+        height: 400px !important;
+    }
+    .imagePensamientoEstrategicoSuperior{
+        background-position-x: -116px;
+    }
+    #imageOratoria{
+        background-position-x: center;
+    }
+    .imageAlimentacionSuperior{
+        background-position-x: center;
+    }
+    #imageMetacognicion{
+        background-position-x: center;
+    }
+    .imageSemioticaSuperior{
+        background-position-x: center;
+    }
+    
+}
+
+/*PAGINA FORMACION PROFESIONAL*/
+
+#formacionProfesionalSpan {
+    background-color: rgb(23, 144, 153);
+}
+
+#descripcionyLogoContainerFormacionProfesional {
+    background-color: rgb(112, 164, 188);
+    height: 400px;
+}
+
+/*IMAGEN NEUROMARKETING*/
+#imageNeuromarketing {
+    background-image: url("../images/neuomarketing.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN ECOSENDERISMO*/
+.imageEcosenderismoSuperior,
+#imageEcosenderismo {
+    background-image: url("../images/ecosenderismo.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+.imageEcosenderismoSuperior {
+    display: none;
+}
+
+/*IMAGEN ECOTURISMO*/
+#imageEcoturismo {
+    background-image: url("../images/ecoturismo.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN DIPLOMATURA EDUCACION*/
+.imageDiplomaturaEducacionSuperior,
+#imageDiplomaturaEducacion {
+    background-image: url("../images/educacion-significativa.jpg");
+    background-size: cover;
+    height: 400px;
+}
+.imageDiplomaturaEducacionSuperior {
+    display: none;
+}
+
+/*IMAGEN GASTRONOMICOS*/
+#imageGastronomicos {
+    background-image: url("../images/gastronomia.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN TURISMO ASTRONOMICO*/
+.imageTurismoAstronomicoSuperior,
+#imageTurismoAstronomico {
+    background-image: url("../images/tour-astronomico.jpg");
+    background-size: cover;
+    height: 400px;
+}
+.imageTurismoAstronomicoSuperior {
+    display: none;
+}
+
+/*IMAGEN GESTION FINANCIERA*/
+#imageGestionFinanciera {
+    background-image: url("../images/salud-financiera.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN TURISMO ASTRONOMICO*/
+.imageNeuroeducacionSuperior,
+#imageNeuroeducacion {
+    background-image: url("../images/neuroeducacion.jpg");
+    background-size: cover;
+    height: 400px;
+}
+.imageNeuroeducacionSuperior {
+    display: none;
+}
+
+/*IMAGEN COMUNICACION REDES SOCIALES*/
+#imageComunicacionRedes {
+    background-image: url("../images/comunicacion-en-redes.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN RADIOS COMUNITARIAS*/
+.imageRadiosSuperior,
+#imageRadios {
+    background-image: url("../images/radios-comunitarias.jpg");
+    background-size: cover;
+    height: 400px;
+}
+.imageRadiosSuperior {
+    display: none;
+}
+
+/*IMAGEN SERIGRAFIA*/
+#imageSerigrafia {
+    background-image: url("../images/serigrafia-para-libros.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN IDENTIDAD CORPORATIVA*/
+.imageIdentidadCorporativaSuperior,
+#imageIdentidadCorporativa {
+    background-image: url("../images/identidad-corporativa.jpg");
+    background-size: cover;
+    height: 400px;
+}
+.imageIdentidadCorporativaSuperior {
+    display: none;
+}
+
+/*IMAGEN TECNICAS LITERARIAS*/
+#imageTecnicasLiterarias {
+    background-image: url("../images/tecnicas-literarias.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/*IMAGEN HUERTAS COMUNITARIAS*/
+.imageHuertasComunitariasSuperior,
+#imageHuertasComunitarias {
+    background-image: url("../images/gestion-de-proyectos-huertas-comunitarias.jpg");
+    background-size: cover;
+    height: 400px;
+}
+.imageHuertasComunitariasSuperior {
+    display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    #concienciasContainer {
+        margin-bottom: 0px;
+    }
+    #descripcionyLogoContainerFormacionProfesional {
+        height: 100%;
+    }
+    .imageEcosenderismoSuperior,
+    .imageDiplomaturaEducacionSuperior,
+    .imageTurismoAstronomicoSuperior,
+    .imageNeuroeducacionSuperior,
+    .imageRadiosSuperior,
+    .imageIdentidadCorporativaSuperior,
+    .imageHuertasComunitariasSuperior {
+        display: block;
+        height: 400px !important;
+        background-position-x: center;
+    }
+    .imagencurso2 {
+        display: none;
+    }
+    .imageTurismoAstronomicoSuperior{
+        background-position-x: -160px;
+    }
+    .imageIdentidadCorporativaSuperior{
+        background-position-x: -160px;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1000px){
+    #descripcionyLogoContainerFormacionProfesional {
+        height: 450px;
+    }
+    #imageNeuromarketing,
+    .imageEcosenderismoSuperior,
+    #imageEcosenderismo,
+    #imageEcoturismo,
+    .imageDiplomaturaEducacionSuperior,
+    #imageDiplomaturaEducacion,
+    #imageGastronomicos,
+    .imageTurismoAstronomicoSuperior,
+    #imageTurismoAstronomico,
+    #imageGestionFinanciera,
+    .imageNeuroeducacionSuperior,
+    #imageNeuroeducacion,
+    #imageComunicacionRedes,
+    .imageRadiosSuperior,
+    #imageRadios,
+    #imageSerigrafia,
+    .imageIdentidadCorporativaSuperior,
+    #imageIdentidadCorporativa,
+    #imageTecnicasLiterarias,
+    .imageHuertasComunitariasSuperior,
+    #imageHuertasComunitarias {
+        height: 450px !important;
+    }
+}
+
+
+
+
+
